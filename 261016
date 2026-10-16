@@ -1,0 +1,74 @@
+# 261016
+
+# 1
+sum = 0
+for i in range(1, 101): sum += i
+print(sum)
+
+# 2
+sum = 0
+for i in range(1, 101):
+    if i % 2 == 0: sum += i
+print(sum)
+
+# 3
+sum = 0
+for i in range(2, 101, 2): sum += i
+print(sum)
+
+# 4
+n = int(input("숫자 입력: "))
+for i in range(1, 10):
+    if i > 0: print(n, "x", i, "=", n * i)
+    
+# 5
+n = int(input("숫자 입력: "))
+for i in range(1, 10):
+    print(n, "x", i, "=", n * i)
+    
+# 6
+for n in range(2, 10):
+    for i in range(1, 10):
+        print(n, "x", i, "=", n * i)
+    print("----------------")
+
+# 7
+i = 1
+while True:
+    print(i)
+    if i == 100: break
+    i += 1
+
+# 8
+a = list(range(1, 21))
+for i in a:
+    if i % 2 == 0: print(i)
+    
+# 9
+a = list(range(1, 21))
+a.pop(0)
+print(a)
+
+# 10
+a = list(range(1, 21))
+del a[0]
+print(a)
+
+# 11
+a = list(range(1, 21))
+a.remove(1)
+print(a)
+
+# 12
+total = 0
+scores = [85, 95, 70, 75, 99, 93, 88]
+for i in scores:
+    total+=i
+print(total)
+
+# 13
+max_scores = ()
+scores = [85, 95, 70, 75, 99, 93, 88]
+for i in scores:
+    if max_score < i:
+        max_score = i
